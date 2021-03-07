@@ -2,6 +2,6 @@ import RequiredImplementationMissingError from './RequiredImplementationMissingE
 
 export default class FlyBehavior {
   fly() {
-    throw new RequiredImplementationMissingError('Fly is not implemented');
+    throw new RequiredImplementationMissingError('fly is not implemented');
   }
 }
