@@ -1,8 +1,10 @@
 import RequiredImplementationMissingError from './RequiredImplementationMissingError.js';
 
 export default class Duck {
-  flyBehavior;
-  quackBehavior;
+  constructor() {
+    this.flyBehavior = undefined;
+    this.quackBehavior = undefined;
+  }
 
   display() {
     throw new RequiredImplementationMissingError('display is not implemented');
@@ -12,7 +14,7 @@ export default class Duck {
     this.flyBehavior = flyBehavior;
   }
 
-  quackBehavior(quackBehavior) {
+  setQuackBehavior(quackBehavior) {
     this.quackBehavior = quackBehavior;
   }
 

@@ -3,8 +3,10 @@ import ModelDuck from './ModelDuck.js';
 import FlyRocketPowered from './FlyRocketPowered.js';
 
 class MiniDuckSimulator {
-  mallard;
-  model;
+  constructor() {
+    this.mallard = undefined;
+    this.model = undefined;
+  }
 
   perform() {
     this.mallard = new MallardDuck();
@@ -13,7 +15,7 @@ class MiniDuckSimulator {
 
     this.model = new ModelDuck();
     this.model.performFly();
-    this.model.setFlyBehavior(new FlyRocketPowered())
+    this.model.setFlyBehavior(new FlyRocketPowered());
     this.model.performFly();
   }
 }
