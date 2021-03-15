@@ -1,6 +1,6 @@
-import QuackBehavior from './QuackBehaviorInterface'
-import FlyBehavior from './FlyBehaviorInterface'
-import RequiredImplementationMissingError from './RequiredImplementationMissingError.js';
+import QuackBehavior from './QuackBehavior'
+import FlyBehavior from './FlyBehavior'
+import RequiredImplementationMissingError from './RequiredImplementationMissingError';
 
 export default class Duck {
   flyBehavior: FlyBehavior;

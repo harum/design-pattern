@@ -1,10 +1,10 @@
 import RequiredImplementationMissingError from './RequiredImplementationMissingError.js';
 
 export default class Duck {
-  constructor() {
-    this.flyBehavior = undefined;
-    this.quackBehavior = undefined;
-  }
+  /* eslint-disable */
+  flyBehavior;
+  quackBehavior;
+  /* eslint-enable */
 
   display() {
     throw new RequiredImplementationMissingError('display is not implemented');

@@ -1,12 +1,11 @@
-import MallardDuck from './MallardDuck.js';
-import ModelDuck from './ModelDuck.js';
-import FlyRocketPowered from './FlyRocketPowered.js';
+import Duck from './Duck';
+import MallardDuck from './MallardDuck';
+import ModelDuck from './ModelDuck';
+import FlyRocketPowered from './FlyRocketPowered';
 
 class MiniDuckSimulator {
-  /* eslint-disable */
-  mallard;
-  model;
-  /* eslint-enable */
+  mallard: Duck;
+  model: Duck;
 
   perform() {
     this.mallard = new MallardDuck();
