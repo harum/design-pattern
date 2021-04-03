@@ -2,7 +2,7 @@ import Duck from './Duck';
 import Quack from './Quack';
 import FlyNoWay from './FlyNoWay';
 
-export default class MallardDuck extends Duck {
+export default class ModelDuck extends Duck {
   constructor() {
     super();
     this.quackBehavior = new Quack();

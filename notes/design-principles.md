@@ -11,12 +11,7 @@
 -  Identify the aspects of your application that vary and separate them from what stays the same.
 -  Program to an interface, not an implementation
 -  Favor composition over inheritance
-
-## OO Patterns
-
-### The Strategy Pattern
-
-**The Strategy Pattern** defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+-  Strive for loosely coupled designs between object that interact
 
 ## The power of a shared pattern vocabulary
 -  Shared pattern vocabularies are POWERFUL.
@@ -24,6 +19,20 @@
 -  Talking at the pattern level allows you to stay “in the design” longer.
 -  Shared vocabularies can turbo-charge your development team.
 -  Shared vocabularies encourage more junior developers to get up to speed.
+
+
+## OO Patterns
+
+### The Strategy Pattern
+
+**The Strategy Pattern** defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+
+### Observer Pattern
+> Publisher + Subscriber = Observer pattern
+
+> **The Observer Pattern** defines a one-to-many dependency between objects so
+> that when one object changes state, all of its dependents are notified and
+> updated automatically.
 
 ## Self notes
 > Should effort go into reuse **above** maintainability and extensibility? (I
