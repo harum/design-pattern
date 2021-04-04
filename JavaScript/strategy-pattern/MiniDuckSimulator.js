@@ -15,10 +15,11 @@ class MiniDuckSimulator {
 
     this.model = new ModelDuck();
     this.model.performFly();
+    this.model.performQuack();
     this.model.setFlyBehavior(new FlyRocketPowered());
     this.model.performFly();
   }
 }
 
-const duck = new MiniDuckSimulator();
-duck.perform();
+const simulator = new MiniDuckSimulator();
+simulator.perform();
