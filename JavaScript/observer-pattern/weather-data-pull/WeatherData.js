@@ -1,12 +1,13 @@
 import Subject from './Subject.js';
 
 class WeatherData extends Subject {
+  _observers = new Set();
+  _temperature = undefined;
+  _humidity = undefined;
+  _pressure = undefined;
+
   constructor() {
     super();
-    this._observers = new Set();
-    this._temperature = undefined;
-    this._humidity = undefined;
-    this._pressure = undefined;
   }
 
   _notifyObservers() {
