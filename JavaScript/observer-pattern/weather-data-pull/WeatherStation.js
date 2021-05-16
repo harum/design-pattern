@@ -2,6 +2,7 @@ import WeatherData from './WeatherData.js';
 import CurrentConditionDisplay from './CurrentConditionDisplay.js';
 import ForecastDisplay from './ForecastDisplay.js';
 import HeatIndexDisplay from './HeatIndexDisplay.js';
+import TemperatureStatisticDisplay from './TemperatureStatisticDisplay.js';
 
 class WeatherStation {
   constructor() {
@@ -9,6 +10,7 @@ class WeatherStation {
     this.currentConditionDisplay = new CurrentConditionDisplay(this.weatherData);
     this.forecastDisplay = new ForecastDisplay(this.weatherData);
     this.heatIndexDisplay = new HeatIndexDisplay(this.weatherData);
+    this.temperatureStatisticDisplay = new TemperatureStatisticDisplay(this.weatherData);
   }
 
   update() {
