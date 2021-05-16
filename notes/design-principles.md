@@ -12,6 +12,7 @@
 -  Program to an interface, not an implementation
 -  Favor composition over inheritance
 -  Strive for loosely coupled designs between object that interact
+-  Classes should be open to extension, but closed for modification
 
 ## The power of a shared pattern vocabulary
 -  Shared pattern vocabularies are POWERFUL.
@@ -33,6 +34,11 @@
 > **The Observer Pattern** defines a one-to-many dependency between objects so
 > that when one object changes state, all of its dependents are notified and
 > updated automatically.
+
+### Decorator pattern
+> The decorator pattern attaches additional responsibilities to an object
+> dynamically. Decorators provide a flexible alternative to subclassing for
+> extending functionality
 
 ## Self notes
 > Should effort go into reuse **above** maintainability and extensibility? (I
