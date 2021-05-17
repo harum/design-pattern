@@ -11,7 +11,7 @@ class Mocha extends CondimentDecorator {
   }
 
   cost() {
-    return this._beverage.cost() + .20;
+    return this._beverage.cost() + (.20 * this._beverage.getSize());
   }
 }
 

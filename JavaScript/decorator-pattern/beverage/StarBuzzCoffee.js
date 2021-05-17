@@ -8,19 +8,25 @@ import Whip from './Whip.js';
 class StarBuzzCoffee {
   perform() {
     this.beverage = new Espresso();
-    console.log(this.beverage.getDescription() + " $" + this.beverage.cost());
+    console.log(`${this.beverage.getDescription()} (${this.beverage.getSize()}) $ ${this.beverage.cost()}`);
+    this.beverage.setSize('small');
+    console.log(`${this.beverage.getDescription()} (${this.beverage.getSize()}) $ ${this.beverage.cost()}`);
 
     this.beverage2 = new DarkRoast();
     this.beverage2 = new Mocha(this.beverage2);
     this.beverage2 = new Mocha(this.beverage2);
     this.beverage2 = new Whip(this.beverage2);
-    console.log(this.beverage2.getDescription() + " $" + this.beverage2.cost());
+    console.log(`${this.beverage2.getDescription()} (${this.beverage2.getSize()}) $ ${this.beverage2.cost()}`);
+    this.beverage2.setSize('medium');
+    console.log(`${this.beverage2.getDescription()} (${this.beverage2.getSize()}) $ ${this.beverage2.cost()}`);
 
     this.beverage3 = new HouseBlend();
     this.beverage3 = new Soy(this.beverage3);
     this.beverage3 = new Mocha(this.beverage3);
     this.beverage3 = new Whip(this.beverage3);
-    console.log(this.beverage3.getDescription() + " $" + this.beverage3.cost());
+    console.log(`${this.beverage3.getDescription()} (${this.beverage3.getSize()}) $ ${this.beverage3.cost()}`);
+    this.beverage3.setSize('large');
+    console.log(`${this.beverage3.getDescription()} (${this.beverage3.getSize()}) $ ${this.beverage3.cost()}`);
   }
 }
 

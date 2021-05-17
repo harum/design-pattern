@@ -7,6 +7,14 @@ class CondimentDecorator extends Beverage {
   getDescription() {
     throw new RequiredImplementationMissingError();
   }
+
+  getSize() {
+    return this._beverage.getSize();
+  }
+
+  setSize(size) {
+    this._beverage.setSize(size);
+  }
 }
 
 export default CondimentDecorator;

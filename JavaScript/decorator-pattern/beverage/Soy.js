@@ -11,7 +11,7 @@ class Soy extends CondimentDecorator {
   }
 
   cost() {
-    return this._beverage.cost() + .15;
+    return this._beverage.cost() + (.15 * this._beverage.getSize());
   }
 }
 

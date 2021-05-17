@@ -11,7 +11,7 @@ class Whip extends CondimentDecorator {
   }
 
   cost() {
-    return this._beverage.cost() + .10;
+    return this._beverage.cost() + (.10 * this._beverage.getSize());
   }
 }
 
