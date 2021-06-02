@@ -13,6 +13,8 @@
 -  Favor composition over inheritance
 -  Strive for loosely coupled designs between object that interact
 -  Classes should be open to extension, but closed for modification
+-  Depend upon abstraction. Do not depend upon concrete classes (Dependency
+   Inversion Principle)
 
 ## The power of a shared pattern vocabulary
 -  Shared pattern vocabularies are POWERFUL.
