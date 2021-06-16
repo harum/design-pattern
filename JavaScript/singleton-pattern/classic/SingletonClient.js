@@ -3,7 +3,7 @@ import Singleton from './Singleton.js';
 const a = new Singleton();
 console.log(a.showId());
 
-const b = new Singleton();
+const b = Singleton.getInstance();
 const c = new Singleton();
 c.id = 2;
 console.log(a.showId());

@@ -42,6 +42,10 @@
 > dynamically. Decorators provide a flexible alternative to subclassing for
 > extending functionality
 
+### Singleton pattern
+The Singleton Pattern ensures a class has only one instance, and provide a
+global point of access to it.
+
 ## Self notes
 > Should effort go into reuse **above** maintainability and extensibility? (I
 > think maintainability and extensibility is **as important as** reuseability)

@@ -11,6 +11,10 @@ export default class Singleton {
     return Singleton.instance;
   }
 
+  static getInstance() {
+    return new Singleton();
+  }
+
   showId() {
     console.log(`id = ${this.id}`);
   }
