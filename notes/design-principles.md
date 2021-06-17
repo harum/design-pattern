@@ -42,9 +42,16 @@
 > dynamically. Decorators provide a flexible alternative to subclassing for
 > extending functionality
 
+### Factory pattern
+
 ### Singleton pattern
 The Singleton Pattern ensures a class has only one instance, and provide a
 global point of access to it.
+
+### Command pattern
+> The command pattern encapsulates a request as an object thereby letting you
+> parameterize other objects with different request, queue or log requests, and
+> support undoable operations.
 
 ## Self notes
 > Should effort go into reuse **above** maintainability and extensibility? (I
