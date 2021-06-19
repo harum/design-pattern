@@ -1,21 +1,17 @@
 import SimpleRemoteControl from './SimpleRemoteControl.js';
 import Light from './Light.js';
-import LightOnCommand from './LightOnCommand.js';
 import GarageDoor from './GarageDoor.js';
-import GarageDoorOpenCommand from './GarageDoorOpenCommand.js';
 
 export default class RemoteControlTest {
   static perform() {
     const remote = new SimpleRemoteControl();
 
     const light = new Light();
-    const lightOn = new LightOnCommand(light);
-    remote.setCommand(lightOn);
+    remote.setCommand(() => light.on());
     remote.buttonWasPressed();
 
     const garageDoor = new GarageDoor();
-    const garageDoorOpen = new GarageDoorOpenCommand(garageDoor);
-    remote.setCommand(garageDoorOpen);
+    remote.setCommand(() => garageDoor.up());
     remote.buttonWasPressed();
   }
 }
