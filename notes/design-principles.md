@@ -16,6 +16,8 @@
 -  Depend upon abstraction. Do not depend upon concrete classes (Dependency
    Inversion Principle)
 -  Principle of Least Knowledge: talk only to your immediate friends
+-  Don't call us, we will call you. (superclass is running the show, so let them
+   call you subclass method when they are needed)
 
 ## The power of a shared pattern vocabulary
 -  Shared pattern vocabularies are POWERFUL.
@@ -69,6 +71,11 @@ global point of access to it.
 > The facade pattern provide a unified interface to a set of interfaces in a
 > subsystem. Facade defines a higher-level interface that makes the subsystem
 > easier to use.
+
+### Template Method pattern
+> The template method define the skeleton of an algorithm in an operation
+> deffering some steps to subclasses. Template Method lets subclasses redefine
+> certain steps of an algorithm without changing the algorithm's structure.
 
 ## Self notes
 > Should effort go into reuse **above** maintainability and extensibility? (I
