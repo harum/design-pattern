@@ -18,6 +18,8 @@
 -  Principle of Least Knowledge: talk only to your immediate friends
 -  Don't call us, we will call you. (superclass is running the show, so let them
    call you subclass method when they are needed)
+-  A class should only have one reason to change (Single Responsibility
+   Principle)
 
 ## The power of a shared pattern vocabulary
 -  Shared pattern vocabularies are POWERFUL.
@@ -76,6 +78,10 @@ global point of access to it.
 > The template method define the skeleton of an algorithm in an operation
 > deffering some steps to subclasses. Template Method lets subclasses redefine
 > certain steps of an algorithm without changing the algorithm's structure.
+
+### Iterator Pattern
+> The Iterator Pattern provides a way to access the elements of an aggregate
+> object sequentially without exposing its underlying representation.
 
 ## Self notes
 > Should effort go into reuse **above** maintainability and extensibility? (I
